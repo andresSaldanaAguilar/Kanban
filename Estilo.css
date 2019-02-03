@@ -1,0 +1,607 @@
+body
+{
+    background: url('./Imagen/Fondo.jpg');
+    width: 100%; height: 100%;
+}
+
+div.Principal
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -310px;
+    margin-left: -500px;
+    width: 1000px;
+    height: 550px;
+    background-color: rgba(255,255,255,.3);
+    min-height: 500px;
+    min-width: 500px;
+    border: 2px #999999;
+    border-radius: 0px 220px 0px 220px;
+    box-shadow: 10px 10px 5px #888;
+    
+}
+
+div.Tablero
+{
+    position: absolute;
+    top: 50%;
+    margin-top: -310px;
+    width: 100%;
+    height: 750px;
+    overflow: auto;
+    background-color: rgba(255,255,255,1);
+    border: 2px #999999;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 5px #888;
+}
+
+/*
+div.Principal
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -310px;
+    margin-left: -500px;
+    width: 1000px;
+    height: 550px;
+    
+    background-color: rgba(255,255,255,.3);
+    min-height: 500px;
+    min-width: 500px;
+    border: 2px #999999;
+    border-radius: 0px 220px 0px 220px;
+    box-shadow: 10px 10px 5px #888;
+}
+*/
+
+div.Menu
+{
+    position: absolute;
+    top: 0%;
+    left: -300px;
+    width: 350px;
+    height: 200px;
+    background-color: rgba(255,255,255,1);
+    border: 3px #999999;
+    border-radius: 0px 100px 100px 0px;
+    box-shadow: 10px 10px 5px #888;
+    z-index: 1;
+    overflow: auto;
+    transition: 0.6s;
+}
+
+div.Menu:hover
+{
+    left:0px;
+}
+
+div.contenido
+{
+    position: absolute;
+    top: 55%;
+    left: 900px;
+    margin-top: -310px;
+    margin-left: -500px;
+    width: 1300px;
+    height: 600px;
+    overflow: auto;
+    
+    background-color: rgba(255,255,255,1);
+    border: 2px #999999;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 5px #888;
+}
+
+/*
+div.diagrama
+{
+    position: absolute;
+    top: 35%;
+    left: 600px;
+    margin-top: -310px;
+    margin-left: -500px;
+    width: 1700px;
+    height: 950px;
+    overflow: auto;
+    
+    background-color: rgba(255,255,255,1);
+    border: 2px #999999;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 10px 10px 5px #888;
+    font-family: sans-serif;
+}
+
+div.comentarios
+{
+    position: absolute;
+    top: 55%;
+    left: 1150px;
+    margin-top: -310px;
+    margin-left: -500px;
+    width: 1100px;
+    height: 600px;
+    overflow: auto;
+    
+    background-color: rgba(255,255,255,1);
+    border: 2px #999999;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 5px #888;
+}
+*/
+
+.Titulo
+{
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+th.Titulo
+{
+    background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    color: white;
+}
+      
+
+div.border
+{
+    position:relative;
+    margin: 30px auto;
+    left:100px;
+    width:80%;
+    border:5px solid #003366;
+    border-radius:20px;
+    margin-left:10px;
+    float:left;
+    margin-bottom:0px;
+    margin-top:20px;
+}
+
+#RelojDiv
+{
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    background-color: rgba(255,255,255,1);
+    border: 2px #999999;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 5px #888;
+    font-family: sans-serif;
+    top: 10%;
+	left: 50%;
+}
+
+#Reloj
+{
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    position: absolute;
+    bottom: 0px;
+}
+
+.boton
+{
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    border: 2px solid #4d90fe;
+    border-radius: 10px 10px 10px 10px;
+    font-family: sans-serif;
+    font-size: 22px;
+    color: white;         
+}
+
+.boton:focus,
+.boton:hover
+{
+    background-image: -webkit-linear-gradient(top,#4d90fe,#7098d8); 
+    cursor:pointer;
+    cursor: hand;
+}
+
+#btnReg
+{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.boton2
+{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: -webkit-linear-gradient(top,#fc4902,#db4104);
+    border: 2px solid #fc4902;
+    border-radius: 10px 10px 10px 10px;
+    font-family: sans-serif;
+    font-size: 22px;
+    color: white;
+}
+
+.boton2:focus,
+.boton2:hover 
+{
+    background-image: -webkit-linear-gradient(top,#fc4902,#b82f05);
+    cursor:pointer;
+    cursor: hand;
+}
+
+.secondForm 
+{
+    position: relative;
+}
+
+.menuTitle
+{
+    width: 190px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: -webkit-linear-gradient(top,#0c960a,#14b512);
+    border-radius: 0px 0px 15px 0px;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;         
+}
+  
+#caja
+{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    width: 400px;
+    height: 380px;
+    margin-left: -200px;
+    border: 1px solid #666666;
+    background-color: rgba(204,204,204,.8);
+    padding-top: 30px;
+}
+
+#caja2
+{
+    position: absolute;
+    top: 70px;
+    left: 40%;
+    width: 600px;
+    height: 380px;
+    margin-left: -200px;
+    border: 1px solid #666666;
+    background-color: rgba(204,204,204,.8);
+    padding-top: 30px;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight:bold;
+}
+
+#caja3
+{
+    position: absolute;
+    top: 50px;
+    left: 36.5%;
+    width: 700px;
+    height: 470px;
+    margin-left: -200px;
+    border: 1px solid #666666;
+    background-color: rgba(204,204,204,.8);
+    padding-top: 30px;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+input.texto
+{
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    width: 320px;
+    padding-left: 5px;
+}
+            
+imagen
+{
+    position: relative;
+    top: 10em;
+    left: 50%;
+}
+
+.menuSub
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.modal
+{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalCont
+{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modalHeader
+{
+    padding: 2px 16px;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    color: white;
+}
+
+.modalBody
+{
+    padding: 2px 0px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.modalField
+{
+    display: block;
+    height: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modalGens
+{
+    display: block;
+    width: 90%;
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+
+.modalGens *
+{
+    display: inline-block;
+    height: 30px;
+    margin: 5px;
+}
+
+.modalGens input[type="text"]
+{
+    width:50%;
+}
+.modalGens input[type="number"]
+{
+    width:25%;
+}
+
+.modalGenClose
+{
+    color: grey;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalGenClose:hover,
+.modalGenClose:focus
+{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalArea
+{
+    height: 100px;
+    width: 80%;
+}
+
+.modalFooter
+{
+    margin: 20px 0px;
+    padding: 2px 0px;
+    color: white;
+}
+
+.modalButton
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    border: 2px solid #4d90fe;
+    border-radius: 10px 10px 10px 10px;
+    font-family: sans-serif;
+    font-size: 22px;
+    color: white; 
+}
+
+.modalButton:focus,
+.modalButton:hover
+{
+    background-image: -webkit-linear-gradient(top,#4d90fe,#7098d8); 
+    cursor:pointer;
+    cursor: hand;
+}
+
+.modalClose
+{
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.modalClose:hover,
+.modalClose:focus
+{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalAdd
+{
+    display: block;
+    color: gray;
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 0 8px;
+    width: min-content;
+    text-align: center;
+    margin: 0px auto;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalAdd:hover,
+.modalAdd:focus
+{
+    color: #000;
+    border: 1px solid #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@-webkit-keyframes animatetop
+{
+    from
+    {
+        top:30%;
+        opacity: 0;
+    } 
+    to
+    {
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+}
+
+@keyframes animatetop
+{
+    from
+    {
+        top: 30%;
+        opacity: 0;
+    }
+    to
+    {
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+}
+
+#loginTitulo
+{
+    position: static;
+    bottom: 30px;
+    right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: -webkit-linear-gradient(top,#0c960a,#14b512);
+    border: 3px solid #0c960a;
+    border-radius: 10px 10px 10px 10px;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;         
+}
+
+.dropdown
+{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+}
+
+#busqueda
+{
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.dropdownContent
+{
+    width: 80%;
+    margin: 0px auto;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownContent div
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent div:hover
+{
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#busqueda:not(:placeholder-shown) + .dropdownContent
+{
+    display: block;
+}
+
+.userMod
+{
+    position: absolute;
+    text-align: center;
+    top: 470px;
+    left: 320px;
+    width: 400px;
+}
+
+.userMod *
+{
+    display: inline-block;
+    height: 30px;
+    margin: 5px;
+}

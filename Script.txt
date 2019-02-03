@@ -1,0 +1,115 @@
+Script 
+
+create database ProyectoISW;
+
+use ProyectoISW
+
+create table Usuario(
+idUsuario int not null primary key auto_increment,
+userName varchar(100),
+Nombre varchar(100),
+ApPaterno varchar(100),
+ApMaterno varchar(100), 
+Correo varchar(100),
+Contrasena varchar(100)
+);
+
+create table Portafolio(
+idPortafolio int not null primary key auto_increment,
+Portafolio varchar(100),
+Estado int,
+FechaCreacion date,
+Swag varchar(100),
+idUsuario int,
+foreign key(idUsuario) references Usuario(idUsuario)
+on delete cascade on update cascade
+); 
+
+create table MiembroUserPort(
+idUsuario int not null,
+idPortafolio int not null,
+primary key(idUsuario,idPortafolio),
+foreign key(idUsuario) references Usuario(idUsuario)
+on delete cascade on update cascade,
+foreign key(idPortafolio) references Portafolio(idPortafolio)
+on delete cascade on update cascade
+);
+
+create table Tablero(
+idTablero int not null primary key auto_increment,
+Nombre varchar(100),
+idPortafolio int,
+foreign key(idPortafolio) references Portafolio(idPortafolio)
+on delete cascade on update cascade
+);
+
+create table ColaboraUserTab(
+idUsuario int not null,
+idTablero int not null,
+primary key(idUsuario,idTablero),
+foreign key(idUsuario) references Usuario(idUsuario)
+on delete cascade on update cascade,
+foreign key(idTablero) references Tablero(idTablero)
+on delete cascade on update cascade
+);
+
+create table Bloqueo(
+idBloqueo int not null primary key auto_increment,
+Titulo varchar(100),
+Descripcion varchar(100),
+idUsuario int not null,
+idTablero int not null,
+foreign key(idUsuario) references Usuario(idUsuario)
+on delete cascade on update cascade,
+foreign key(idTablero) references Tablero(idTablero)
+on delete cascade on update cascade
+);
+
+create table Columna(
+idColumna int not null primary key auto_increment,
+Nombre varchar(100),
+NumColumna int,
+LimitesWIP int,
+TipoColumna varchar(100),
+idTablero int,
+foreign key(idTablero) references Tablero(idTablero)
+on delete cascade on update cascade
+);
+
+create table Tarea(
+idTarea int not null primary key auto_increment,
+Swag varchar(100),
+FechaMod date,
+ValorNegocios int,
+Titulo varchar(100),
+Prioridad varchar(100),
+Estado varchar(100),
+FechaCreacion date,
+TipoTarea varchar(100),
+Progreso varchar(100),
+idColumna int,
+idTablero int,
+idUsuario int,
+foreign key(idColumna) references Columna(idColumna)
+on delete cascade on update cascade,
+foreign key(idTablero) references Tablero(idTablero)
+on delete cascade on update cascade,
+foreign key(idUsuario) references Usuario(idUsuario)
+on delete cascade on update cascade
+);
+
+create table ImpideBloTar(
+idBloqueo int not null,
+idTarea int not null,
+primary key(idBloqueo,idTarea),
+foreign key(idBloqueo) references Bloqueo(idBloqueo)
+on delete cascade on update cascade,
+foreign key(idTarea) references Tarea(idTarea)
+on delete cascade on update cascade
+);
+
+
+
+
+
+

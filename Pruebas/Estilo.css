@@ -1,0 +1,31 @@
+
+div.columna
+{
+    position: absolute;
+    left: 900px;
+    
+    width: 300px;
+    height: 100%;
+    overflow: auto;
+    
+	font-size:20px;
+	font: menu;
+	color: white;
+	
+    background-color: rgba(241, 165, 40,1);
+    border: 3px solid;
+	border-color: black;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 5px #888;
+}
+
+
+#Orange 241, 165, 40
+#Green  167, 224, 14
+#Red    224, 65, 14
+#Blue   14, 149, 224
+#Purple 156, 41, 234
+#Gray   147, 136, 154
+#Greed  55, 132, 62
+#Blued  40, 188, 173
+#Yellow 231, 222, 41

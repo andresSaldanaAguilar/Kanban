@@ -1,0 +1,90 @@
+#principio{
+	background: rgb( 27, 45, 74 );
+	position:absolute;
+	margin-top:25px;
+	padding-top:0px;
+	width:100%;
+	height:700px;
+	overflow: auto;
+}
+
+#grid{
+	background: rgb( 27, 45, 74 );
+	position:absolute;
+	width:100%;
+	height:600px;
+	top: 50px;
+	border:4px solid;
+	overflow: auto;
+}
+
+div.columna
+{   
+    width: 300px;
+	height: 200px;
+	min-height: 200px;
+	font-size:20px;
+	font: menu;
+	color: white;
+	
+    border: 3px solid;
+	border-color: black;
+    border-radius: 10px 10px 10px 10px;
+	resize: both;
+    overflow: auto;
+}
+.draggable{
+	cursor:move;
+	position:absolute;
+	background-color: rgba(255, 255, 255,1);
+	border:1px solid;
+	border-radius:0%;
+	width:250px;
+	height:80px;
+	z-index: 1;
+	border-radius: 10px 10px 10px 10px;
+}
+.draggable .tooltip{
+	visibility: hidden;
+	margin-left: 10px;
+	width: 100px;
+	background: rgba(0, 0, 0, 0.05);
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: -10px;
+	left: 110%;
+}
+.draggable:hover .tooltip{
+	visibility: visible;
+}
+.zone{
+	
+	position:absolute;
+	width:250px;
+	height:120px;
+	
+	line-height: 10px;
+	vertical-align: middle;
+}
+
+.zone .tooltip{
+	visibility: hidden;
+	margin-left: 10px;
+	width: 100px;
+	background: rgba(0, 0, 0, 0.05);
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 2;
+}
+
+
+.caja{
+	position:absolute;
+	margin-top:150px;
+	margin-left:1400px;
+}
