@@ -18,6 +18,8 @@
 --
 -- Table structure for table `colaborausertab`
 --
+CREATE DATABASE proyectoISW;
+USE proyectoISW;
 
 DROP TABLE IF EXISTS `colaborausertab`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
